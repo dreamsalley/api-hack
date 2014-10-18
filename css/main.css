@@ -1,0 +1,123 @@
+html {
+	/* Scrollbar */
+	overflow: -moz-scrollbars-vertical; 
+	overflow-y: scroll;
+}
+
+* {
+	/* outline: #BDBDBD 1px dotted; */
+}
+
+body {
+	background: url(../img/music3.jpg) no-repeat center center;
+	background-size: cover;
+	background-position: fixed;
+	background-attachment: fixed;
+	background-color: #a3a0a0;
+
+}
+
+.main {
+	color: #585858;
+	margin-top: 75px;
+	font-size: 14pt;
+
+	/* Find desired fonts */
+	font-family: 'Orbitron', sans-serif; 
+	
+}
+
+.title {
+	text-align: center;
+	/*font-weight: bold;*/
+	font-size: 48pt;
+	margin-bottom: 85px;
+	cursor: default;
+	color: white;
+
+}
+
+
+.app {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background-color: black;
+	width: 425px;
+	height: 300px;
+	opacity: 0.7;
+
+/* 	position: absolute;
+margin: auto;
+top: 0; left: 0; bottom: 0; right: 0; */
+
+	margin-left: auto;
+	margin-right: auto;	
+	text-align: center; 
+}
+
+#song-input {
+	/* Find desired font */
+	font-family: 'Orbitron', sans-serif; 
+
+	font-size: 16pt;
+	width: 80%;
+	vertical-align: middle;
+	border: 1px solid gray;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+
+	margin-top: 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.info {
+	/* margin-top: 46px; */
+	margin-top: 75px;
+	font-size: 14pt;
+	color: white;
+}
+
+.aside {
+	/* margin-top: 40px; */
+	margin-top: 5px;
+	font-size: 11pt;
+	color: white;
+}
+
+
+.hidden {
+	display: none;
+}
+
+footer {
+	font-size: 13pt;
+	text-align: center;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	bottom: 20px;
+	color: white;
+
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	-webkit-transition: color 0.5s ease;
+	transition: color 0.5s ease;
+}
+
+a:visited {
+	color: white;
+}
+
+a:hover {
+	color: purple;
+}
