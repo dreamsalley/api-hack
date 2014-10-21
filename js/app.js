@@ -19,3 +19,31 @@ $.ajax({
   }
 });
 });
+
+var accessToken = '5e67feb6e6ec0bb3adbbb1b356c93148 ';
+var tag;
+
+function whosampled(tag){
+  $.ajax({
+      url: 'http://developer.echonest.com/api/v4/artist/search' + tag + '/media/recent',
+      dataType: 'json',
+      type: 'GET',
+      data: {api_key: GASA0WIIJLEC8ZPM4},
+      success: function(data){
+          console.log(data);
+          $('song-input').empty();
+          for(x in data.data){
+            $('song-input').append(+data.data[x]);  
+          }
+      },
+      error: function(data){
+          console.log(data);
+      }
+  });
+}
+
+$('input').keydown(function(e){
+  if(e.which == 13){
+    whosampled($(this).val());
+  }
+})
