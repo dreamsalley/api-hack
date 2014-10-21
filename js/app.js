@@ -1,5 +1,5 @@
  //http://developer.echonest.com/api/v4/artist/search?api_key=FILDTEOIK2HBORODV&format=json&results=10&name=train&bucket=id:whosampled
-$(function() {
+$(document).ready(function() {
     $('input').keydown(function(e) {
         if (e.which == 13) {
             whosampled($(this).val());
