@@ -16,6 +16,7 @@ $.ajax({
   },
   error: function(data){
     console.log('error',data);
+     $('#app').append(data[0].user_id);
   }
 });
 });
