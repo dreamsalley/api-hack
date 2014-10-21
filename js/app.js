@@ -25,7 +25,7 @@ var tag;
 
 function whosampled(tag){
   $.ajax({
-      url: 'http://developer.echonest.com/api/v4/artist/search' + tag + '/media/recent',
+      url: 'http://developer.echonest.com/api/v4/artist/search' + tag + '/artist/search',
       dataType: 'json',
       type: 'GET',
       data: {api_key: GASA0WIIJLEC8ZPM4},
