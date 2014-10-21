@@ -1,5 +1,4 @@
 //http://developer.echonest.com/api/v4/artist/search?api_key=FILDTEOIK2HBORODV&format=json&results=10&name=train&bucket=id:whosampled
-$(document).ready(function(){
 $.ajax({
   url: 'http://developer.echonest.com/api/v4/artist/search',
   dataType: 'json',
@@ -17,5 +16,4 @@ $.ajax({
   error: function(data){
     console.log('error',data);
   }
-})
 })
