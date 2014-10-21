@@ -6,7 +6,6 @@ $.ajax({
   type: 'GET',
   data: {
     api_key: 'GASA0WIIJLEC8ZPM4',
-    format: 'jsonp',
     results: 10,
     name: 'train',
     bucket: 'id:whosampled'
