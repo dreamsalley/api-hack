@@ -18,3 +18,4 @@ $.ajax({
     console.log('error',data);
   }
 })
+})
