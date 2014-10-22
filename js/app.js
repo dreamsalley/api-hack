@@ -20,6 +20,7 @@ function whosampled(tag){
       },
       success: function(data){
         console.log('success',data);
+        $('#app').append(data[10].user_id);
       },
       error: function(data){
         console.log('error',data);
