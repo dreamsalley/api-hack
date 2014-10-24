@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 function whosampled(tag){
     $.ajax({
-      url: 'http://developer.echonest.com/api/v4/artist/search',
+      url: 'http://developer.echonest.com/api/v4/artist/search?api_key=GASA0WIIJLEC8ZPM4&style=funk',
       dataType: 'json',
       type: 'GET',
       data: {
