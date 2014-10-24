@@ -20,11 +20,11 @@ function whosampled(tag){
       },
       success: function(data){
         console.log('success',data);
-        $('.app').append(data.response.artist[0].name);
+        $('.app .info').append(data.response.artists[0].name);
       },
       error: function(data){
         console.log('error',data);
-         $('.app').append(data.response.artist[0].name);
+         $('.app .info').append(data.response.artists[0].name);
       }
     });
 }
