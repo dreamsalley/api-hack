@@ -1,42 +1,46 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-  <script src="./js/app.js"></script>
-  <link href='http://fonts.googleapis.com/css?family=Orbitron:400,500' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/main.css">
-  <title>Can I Have A Sample?</title>
+    <meta charset="UTF-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="./js/app.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Orbitron:400,500' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Can I Have A Sample?</title>
 </head>
 
 <body>
-  <div class="main">
-  <div class="title">Can I Have A Sample?</div>
+    <div class="main">
+        <div class="title">Can I Have A Sample?</div>
 
-    <div class="app">
+        <div class="app">
 
-      <form method="post" name="song" id="song" enctype="multipart/form-data" onsubmit="return false;">
-        <input id="song-input" type="text" placeholder="Enter An Artist"  required/>
-        </form>
+            <form method="post" name="song" id="song" enctype="multipart/form-data" onsubmit="return false;">
+                <input id="song-input" type="text" placeholder="Enter An Artist or Song" required/>
+                <input id="song-input" type="text" placeholder="Enter A Genre" required/>
+            </form>
 
-      <div class="info">
-        <p>Enter Artist Name & See What Songs Of Theirs Have Been Sampled</p>
-        <p class="aside">(Discover some cool new music along the way!)</p>
-    </div>
+            <div class="info">
+                <p>Enter Song For Sample Information</p>
+                <p class="aside">(Discover some cool new music along the way!)</p>
+            </div>
 
-    </div>
+        </div>
     
-    <!-- Insert Correct API Address -->
-    <footer>
-      API from<a href="http://developer.echonest.com/sandbox/whosampled.html">Who Sampled</a>
-      <br/>
-      Application by<a href="http://csdgrevolution.com">Tisean M. Bell and Frank Troglauer</a>
-    </footer>
+        <ul class="results"></ul> 
 
-  </div>
+        <!-- Insert Correct API Address -->
+        <footer>
+            API from<a href="http://developer.echonest.com/sandbox/whosampled.html">Who Sampled</a>
+            <br/>Application by<a href="http://csdgrevolution.com">Tisean M. Bell</a>
+        </footer>
+
+    </div>
 
 
 </body>
+
 </html>
